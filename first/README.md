@@ -1,21 +1,31 @@
-# First
+# First Calculator
 
-**TODO: Add description**
+## Description
 
-## Installation
+This is a simple calculator that I wrote in Elixir for Thinknetica.
+For calculations, I implemented a lexer, a parser and an interpreter.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `first` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:first, "~> 0.1.0"}
-  ]
-end
+## Usage
+
+Run `mix run -e First.Calc.main`:
+
+```
+$ mix run -e First.Calc.main
+> 2 + 3
+5
+> 5 * 1
+5
+> ^C^C
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/first>.
+## Tests
 
+Run `mix test`:
+
+```
+...............................
+Finished in 0.1 seconds (0.00s async, 0.1s sync)
+1 doctest, 30 tests, 0 failures
+
+```
